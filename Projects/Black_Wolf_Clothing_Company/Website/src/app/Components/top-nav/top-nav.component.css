@@ -1,0 +1,102 @@
+.nav{
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.top-nav{
+  height: 150px;
+  background-color: transparent;
+}
+
+.company{
+  font-family: gothicReg;
+  margin-top: 15px;
+  font-size: xxx-large;
+  margin-left: 5%;
+  width: 400px;
+  height: 50px;
+}
+
+.search-bar{
+  margin-bottom: 3px;
+  margin-left: 10%;
+  font-size: small;
+  height: 60px;
+  width: 350px;
+  align-items: center;
+  font-weight: bold;
+  outline-color: black;
+}
+
+.search-bar:hover{
+  outline-color: rgb(66, 80, 66);
+}
+
+.cart{
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.cart-icon{
+  float: left;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.cart-items{
+  float: right;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.mat-toolbar{
+  background-color: transparent;
+}
+
+.mat-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+button{
+  background-color: transparent;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: rgb(66, 80, 66);
+  color: white;
+}
+
+mat-button{
+  font-weight: bold;
+}
+
+hr{
+  opacity: 30%;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.spacer{
+  margin: 0 auto;
+}
+
+
+
+

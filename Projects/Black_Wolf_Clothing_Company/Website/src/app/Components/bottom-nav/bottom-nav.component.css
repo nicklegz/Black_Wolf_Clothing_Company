@@ -1,0 +1,19 @@
+.bottom-container{
+  background-color: rgb(243, 243, 243);
+}
+
+.bottom-nav{
+  display: flex;
+  max-width: 1300px;
+  background-color: transparent;
+  padding: 20px;
+  margin: 0 auto;
+  height: 400px;
+}
+
+h3{
+  font-family: gothicReg;
+  font-size: 22px;
+}
+
+

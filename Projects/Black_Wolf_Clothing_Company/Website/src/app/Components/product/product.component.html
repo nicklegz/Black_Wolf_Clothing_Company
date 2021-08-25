@@ -1,0 +1,27 @@
+<div class="product-container">
+  <div class="product">
+    <img class="product-image" src="{{(product | async)?.Image}}">
+  </div>
+  <div class="product-details-container">
+    <div class="product-details">
+      <h4>{{(product | async)?.Name}}</h4>
+      <span>{{(product | async )?.Description}}</span>
+      <h4>{{(product | async )?.Price | currency}}</h4>
+    </div>
+    <div class="product-sizes">
+      <mat-list class="size-list">
+        <mat-list-item *ngFor="let size of sizes">
+          <button mat-stroked-button class="product-button">
+              {{size.ProductSize}}
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <div class="add-cart-container">
+      <button class="add-cart-button" mat-raised-button>
+          Add To Cart
+      </button>
+    </div>
+
+  </div>
+</div>

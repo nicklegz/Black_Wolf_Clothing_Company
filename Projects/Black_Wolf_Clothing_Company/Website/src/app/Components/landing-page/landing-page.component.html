@@ -1,0 +1,13 @@
+<div class="landing-container">
+  <div class="landing-body">
+    <mat-grid-list cols="4" rowHeight="200px" [gutterSize]="'10px'">
+      <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background] = "tile.color">
+        <img class="tile-image" src={{tile.image}} layout-fill>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

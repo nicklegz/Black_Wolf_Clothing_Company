@@ -1,0 +1,34 @@
+<div class="top-container">
+  <div class="container">
+    <div class="nav">
+          <mat-toolbar class="top-nav">
+            <a routerLink="/home" routerLinkActive="active">
+              <h1 class="company">BLACK WOLF CLOTHING COMPANY</h1>
+            </a>
+            <mat-form-field class="search-bar" appearance="outline">
+              <mat-icon matPrefix>search</mat-icon>
+              <input matInput placeholder="Search for...">
+            </mat-form-field>
+            <span class="spacer"></span>
+            <button mat-button class="cart">
+              <mat-icon class="cart-icon">shopping_cart</mat-icon>
+              <p class="cart-items">{{cartCount}}</p>
+            </button>
+          </mat-toolbar>
+    </div>
+
+    <hr/>
+
+    <div class="products-nav">
+        <mat-toolbar>
+          <mat-list>
+            <mat-list-item *ngFor="let item of menuItems">
+              <button mat-button>{{item.Name}}</button>
+            </mat-list-item>
+          </mat-list>
+        </mat-toolbar>
+    </div>
+    <hr/>
+  </div>
+
+</div>
