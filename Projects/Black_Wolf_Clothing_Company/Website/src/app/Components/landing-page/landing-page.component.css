@@ -1,0 +1,21 @@
+.landing-container{
+  max-width: 1600px;
+  align-items: center;
+  justify-content: left;
+  margin: 0 auto;
+  background-color: transparent;
+  margin-top: 9px;
+}
+
+.landing-page{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: left;
+  margin: 0 auto;
+}
+
+.tile-image {
+  width:100%;
+  height: auto;
+}

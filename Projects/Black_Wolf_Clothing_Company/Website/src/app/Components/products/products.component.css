@@ -1,0 +1,56 @@
+.products-container{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.products{
+  display: flex;
+  flex-direction: column;
+  flex: 85%;
+}
+
+.tree-selections{
+  display: flex;
+  flex-direction: column;
+  flex: 15%;
+}
+
+
+mat-card{
+  height: 450px;
+  max-width: 250px;
+}
+
+h4{
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+}
+
+span{
+  margin-left: 10px;
+  font-size: small;
+  color: black;
+}
+
+p{
+  color: black;
+  margin-left: 10px;
+  font-size: small;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+.product-image{
+  margin-top: 0;
+  max-width: 250px;
+  align-items: center;
+  justify-content: center;
+}

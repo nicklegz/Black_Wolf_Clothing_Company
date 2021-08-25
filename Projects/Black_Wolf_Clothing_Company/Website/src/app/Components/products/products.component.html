@@ -1,0 +1,26 @@
+<div class="products-container">
+  <div class="tree-selections">
+    <section>
+      <h4>Filter by:</h4>
+      <p><mat-checkbox>T-Shirts</mat-checkbox></p>
+      <p><mat-checkbox>Polos</mat-checkbox></p>
+      <p><mat-checkbox>Shorts</mat-checkbox></p>
+    </section>
+  </div>
+  <div class="products">
+    <mat-grid-list cols="4" rowHeight="500px" [gutterSize]="'10px'">
+      <mat-grid-tile *ngFor="let p of products">
+        <mat-card class="mat-elevation-z0">
+          <a matButton [routerLink]="['/product', p.Id]">
+            <mat-card-content>
+              <img class="product-image" src={{p.Image}}>
+              <h4>{{p.Name}}</h4>
+              <span>{{p.Description}}</span>
+              <p>{{p.Price | currency}}</p>
+            </mat-card-content>
+          </a>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
